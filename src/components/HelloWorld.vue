@@ -74,7 +74,7 @@ export default {
         .then(response => {
           console.log('Success')
           console.log(response.data)
-          this.url = "localhost:8080/secret/"+response.data
+          this.url = "https://vautl-client.vercel.app/"+response.data
         }).catch(err => {
           this.someerror = err.response.data
         })
