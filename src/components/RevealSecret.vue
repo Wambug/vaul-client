@@ -16,7 +16,7 @@
     <!-- Hero -->
     <br>
     <div class="d-flex justify-content-center">
-    <button @click="revealsecret" type="button" class="btn btn-primary mx-auto">Reveal Secret!</button>
+    <button v-if="!secret" @click="revealsecret" type="button" class="btn btn-primary mx-auto">Reveal Secret!</button>
     </div>
      <div class="d-flex justify-content-center">
      <p class="text-danger"> {{ someerror }}</p>  
