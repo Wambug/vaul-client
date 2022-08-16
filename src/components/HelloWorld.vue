@@ -33,7 +33,7 @@
       <br>
      <div class="d-flex justify-content-center">
         <label for="minutes">Minutes:</label>
-        <input v-model="time" type="number" id="minutes" name="minutes" min="1" max="3600">
+        <input  oninput="this.value =!!this.value && Math.abs(this.value) >= 1 ? Math.abs(this.value) : null" v-model="time" type="number" id="minutes" name="minutes" min="1" max="3600">
       </div>
       <br>
       <div class="d-flex justify-content-center">
