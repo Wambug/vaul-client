@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 window.axios = axios
-axios.defaults.baseURL = 'http://localhost:9000/v1/'
+axios.defaults.baseURL = 'https://secret-vault-trial.herokuapp.com/v1/'
 
 const createsecret = async (secret, duration) => {
   const data = await axios.post('secret', {
